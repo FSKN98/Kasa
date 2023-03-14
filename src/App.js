@@ -1,13 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import List from './Pages/list/List';
+import ErrorPage from './Pages/error-page/ErrorPage';
+import HomePage from './Pages/home-page/HomePage';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <HomePage/>
+      {/*<header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Vous
         </p>
         <a
           className="App-link"
@@ -17,7 +21,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+  </header>*/}
     </div>
   );
 }
