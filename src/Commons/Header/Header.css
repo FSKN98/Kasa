@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 100px 50px;
+}
+.accueil {
+  text-decoration: none;
+  color: #ff6060;
+  cursor: pointer;
+}
+
+.accueil:hover {
+  text-decoration: underline;
+}
+.aPropos {
+  text-decoration: none;
+  color: #ff6060;
+  margin-left: 50px;
+  cursor: pointer;
+}
+.aPropos:hover {
+  text-decoration: underline;
+}

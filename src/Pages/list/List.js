@@ -1,6 +1,6 @@
 import data from "../../json-data/logements (1).json"
 
-const List = () =>
+const ListPage = () =>
 {
     return (
         <div>
@@ -15,4 +15,4 @@ const List = () =>
     )
 }
 
-export default List 
+export default ListPage 

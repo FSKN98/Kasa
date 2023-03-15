@@ -1,13 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
-import List from './Pages/list/List';
-import ErrorPage from './Pages/error-page/ErrorPage';
-import HomePage from './Pages/home-page/HomePage';
+import Navigation from './Navigation/Navigation';
+
 
 function App() {
   return (
     <div className="App">
-      <HomePage/>
+      <Navigation/>
       {/*<header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
