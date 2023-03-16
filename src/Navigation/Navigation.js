@@ -4,7 +4,8 @@ import { BrowserRouter as Router,
   Navigate,} from "react-router-dom";
 
 import React from "react";
-import HomePage from "../Pages/home-page/HomePage";
+import Banner from "../Pages/Banner/BannerHome";
+import ApartmentGrid from "../Pages/apartment-grid/ApartmentGrid";
 import ErrorPage from "../Pages/error-page/ErrorPage";
 import ListPage from "../Pages/list/List";
 import Header from "../Commons/Header/Header";
@@ -21,7 +22,9 @@ export default function Navigation() {
         <main className="navigation_container">
           <Header/>
           <Routes>  
-            <Route exact path="/" element={<HomePage />} /> 
+            
+            <Route exact path="/" element={<Banner />} /> 
+                    <Route exact path="/" element={<ApartmentGrid />} />
             <Route exact path="/a-propos" element={<APropos />} /> 
              <Route exact path="/fiche-logement" element={<FicheLogement />} /> 
                       <Route exact path="/list" element={<ListPage/>} />
