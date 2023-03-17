@@ -1,7 +1,7 @@
 .aboutContainer{
     padding: 0 100px 50px;
 }
-.banner {
+.bannerAbout {
     background-image: url("../../Images/Banner/banner-about.png");
     min-height: 220px;
     width: 100%;

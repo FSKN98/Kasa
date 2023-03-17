@@ -1,0 +1,14 @@
+.apartContainer{
+        flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+.apartContent{
+    border: 1px solid red;
+        padding: 10px;
+        width: 31%;
+}
+.imgContainer{
+    width: 200px;
+    height: 200px;
+}
