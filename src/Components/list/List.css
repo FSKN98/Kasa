@@ -1,14 +1,31 @@
 .apartContainer{
-        flex-wrap: wrap;
+    background-color: #F7F7F7;
+        margin: 0 100px;
     display: flex;
-    justify-content: space-between;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap; 
 }
 .apartContent{
-    border: 1px solid red;
-        padding: 10px;
+
+background-image:linear-gradient(to top, #863535,#ff6060);
+display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 1rem;
+padding: 0 0px 20px 0;
+
         width: 31%;
 }
+.subtitle{
+    color: #FFFFFF;
+        width: 60%;
+        margin-left: 10px;
+        font-size: 18px;
+}
 .imgContainer{
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    border-radius: 10px 10px 5px 5px;
+
 }
