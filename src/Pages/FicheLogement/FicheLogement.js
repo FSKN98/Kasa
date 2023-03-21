@@ -1,17 +1,20 @@
 import React from "react";
+import "./FicheLogement.css"
 
 export default function FicheLogement() {
   return (
     <div className="apartmentPage">
       <div>
-        <img src="https://picsum.photos/800/400" alt="" />
+        <img src="https://picsum.photos/800/400" alt="" className="apartmentImg" />
       </div>
       <div>
-        <h1>Cozy loft on the Canal Saint-Martin</h1>
+        <h1 className="apartmentTitle">Cozy loft on the Canal Saint-Martin</h1>
         <h2>Paris, Île-de-France</h2>
-        <p>Cozy</p>
-        <p>Canal</p>
-        <p>Paris 10</p>
+        <div className="apartmentTags">
+        <span className="apartmentTag">Cozy</span>
+        <span className="apartmentTag">Canal</span>
+          <span className="apartmentTag">Paris 10</span>
+          </div>
       </div>
       <div className="apartmentOwner">
         <h3>Alexandre Dumas</h3>
