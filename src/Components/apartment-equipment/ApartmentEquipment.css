@@ -1,8 +1,9 @@
-.apartmentDescription{
+.apartmentEquipment {
     margin-bottom: 30px;
     width: 50%;
 }
-.descriptionHeader {
+
+.equipmentHeader {
     font-size: 18px;
     background-color: #ff6060;
     color: white;
@@ -12,13 +13,11 @@
     justify-content: space-between;
     align-items: center;
 }
-
 i {
     font-size: 2em;
     cursor: pointer;
 }
-
-.descriptionContent {
+.equipmentContent {
     position: relative;
     top: -0.3rem;
     z-index: -1;
