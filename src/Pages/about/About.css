@@ -1,7 +1,11 @@
 .aboutContainer{
     padding: 0 100px 50px;
 }
+.aboutContent{
+        padding-inline: 4.5rem;
+}
 .bannerAbout {
+    margin-bottom: 30px;
     background-image: url("../../Images/Banner/banner-about.png");
     min-height: 220px;
     width: 100%;
@@ -10,4 +14,10 @@
     place-items: center;
     color: white;
     font-size: 50px;
+}
+@media screen and (max-width: 768px) {
+.aboutContent {
+        padding-inline: 0;
+    }
+  
 }

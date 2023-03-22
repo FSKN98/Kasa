@@ -32,3 +32,10 @@ padding: 0 0px 20px 0;
     border-radius: 10px 10px 5px 5px;
 
 }
+@media screen and (max-width: 768px) {
+    .bannerContainer {
+            padding: 0 20px 20px;}
+    .apartContainer {
+        margin: 0 20px 20px 20px;
+    }
+}
