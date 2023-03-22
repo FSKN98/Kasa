@@ -2,6 +2,8 @@
   padding: 0 100px 50px;
 }
 .banner {
+      background-repeat: no-repeat;
+        background-size: cover;
   background-image: url("../../Images/Banner/Banner.png");
   min-height: 220px;
 width: 100%;

@@ -5,6 +5,8 @@
         padding-inline: 4.5rem;
 }
 .bannerAbout {
+        background-repeat: no-repeat;
+            background-size: cover;
     margin-bottom: 30px;
     background-image: url("../../Images/Banner/banner-about.png");
     min-height: 220px;

@@ -1,11 +1,13 @@
 import React from "react";
 import "./ApartmentBanner.css";
 
-export default function ApartmentBanner() {
+export default function ApartmentBanner(props)
+{
+  const {imgSource}=props
   return (
    <div>
         <img
-          src="https://picsum.photos/800/400"
+          src={imgSource}
           alt=""
           className="apartmentImg"
         />

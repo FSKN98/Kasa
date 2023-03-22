@@ -1,7 +1,10 @@
 import React from "react";
 import "./ApartmentDescription.css";
 
-export function ApartmentDescription() {
+export function ApartmentDescription(props)
+{
+  const { descriptionApart } = props
+  
   return (
     <div className="apartmentDescription">
       <p className="descriptionHeader">
@@ -9,10 +12,7 @@ export function ApartmentDescription() {
         <i className="fas fa-chevron-down"></i>
       </p>
       <p className="descriptionContent">
-        Ex ea ullamco ad est do ipsum minim laboris nostrud consequat labore
-        proident. Commodo est sit ad ea nulla aliquip nisi sint sit et nisi
-        officia sit. Aliquip tempor incididunt adipisicing laboris. Lorem sunt
-        irure sint amet aliquip do cupidatat ea ex incididunt adipisicing.
+       {descriptionApart}
       </p>
     </div>
   );

@@ -6,15 +6,15 @@ const ListPage = () => {
   return (
     <div className="apartContainer">
       {data.map((logement) => (
-        <Link to={`/fiche-logement/${logement.id}`}>
-          <div className="apartContent">
-            <img src={logement.pictures[0]} className="imgContainer" />
-            <div className="subtitle">{logement.title}</div>
+        <Link className="linkToApartement" to={`/fiche-logement/${logement.id}`}>
+          <div className="apartContent" style={{backgroundImage: `url(${logement.pictures[0]})`}}>       
+            <div className="subtitleContainer">{logement.title}</div>
           </div>
         </Link>
       ))}
     </div>
   );
+
 };
 
 export default ListPage;

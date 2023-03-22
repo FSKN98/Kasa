@@ -21,7 +21,11 @@ export default function Navigation() {
           <Header />
           <Routes>
             <Route exact path="/" element={<HomePage />} />
-                   <Route exact path="/fiche-logement/:id" element={<FicheLogement />} />
+            <Route
+              exact
+              path="/fiche-logement/:id"
+              element={<FicheLogement />}
+            />
             <Route exact path="/a-propos" element={<About />} />
             <Route exact path="/*" element={<ErrorPage />} />
           </Routes>
