@@ -12,3 +12,11 @@ p {
     gap: 1rem;
     margin-bottom: 50px;
 }
+@media screen and (max-width: 768px) {
+    .apartmentPage {
+            padding: 0 20px;
+        }
+.apartmentDescriptionArea {
+       flex-direction: column;
+    }
+}

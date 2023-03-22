@@ -1,67 +1,79 @@
 .apartmentImg {
-    object-fit: cover;
-    width: 100%;
-    height: 25rem;
-    border-radius: 25px;
-    margin-bottom: 30px;
+  object-fit: cover;
+  width: 100%;
+  height: 25rem;
+  border-radius: 25px;
+  margin-bottom: 30px;
 }
 
-.apartmentPage {
-    padding: 0 100px;
-    color: #ff6060;
-}
 
 .apartmentTitle {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 .apartmentTags {
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
-    gap: 1rem;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
+  gap: 1rem;
 }
 
 .apartmentTag {
-    background-color: #ff6060;
-    color: white;
-    padding: 0.1em 1em;
-    border-radius: 10px;
-    text-align: center;
+  background-color: #ff6060;
+  color: white;
+  padding: 0.1em 1em;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .apartmentOwner {
-    margin-left: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .ownerTitle {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    font-weight: 500;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  font-weight: 500;
 }
 
 .apartmentOwnerBadge {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    background-color: #c4c4c4;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
 }
 
 .apartmentOwnerDetails {
-    display: flex;
-    gap: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
 }
 
 .apartmentOwnerStars {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .apartmentHeader {
+  display: flex;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+
+  .apartmentHeader {
+    flex-direction: column;
+  }
+  .apartmentOwner {
     display: flex;
-    margin-bottom: 30px;
+    flex-direction: row;
+    margin: 0;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .apartmentOwnerDetails {
+    order: 1;
+  }
 }

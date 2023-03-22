@@ -22,3 +22,14 @@
 .aPropos:hover {
   text-decoration: underline;
 }
+@media screen and (max-width: 768px) {
+  .logoKasa{
+        width: 145px;
+  }
+  .header {
+    padding: 20px 20px 30px;
+  }
+  .navbar {
+    text-transform: uppercase;
+  }
+}
