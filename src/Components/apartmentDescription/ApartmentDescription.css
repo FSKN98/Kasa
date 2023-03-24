@@ -1,7 +1,8 @@
 .apartmentDescription{
     margin-bottom: 30px;
-    width: 50%;
+    width: 100%;
     overflow: hidden;
+    color: #ff6060;
 }
 .descriptionHeader {
     font-size: 18px;
