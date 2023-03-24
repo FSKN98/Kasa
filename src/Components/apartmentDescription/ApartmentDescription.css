@@ -1,6 +1,7 @@
 .apartmentDescription{
     margin-bottom: 30px;
     width: 50%;
+    overflow: hidden;
 }
 .descriptionHeader {
     font-size: 18px;
@@ -12,12 +13,10 @@
     justify-content: space-between;
     align-items: center;
 }
-
 i {
     font-size: 2em;
     cursor: pointer;
 }
-
 .descriptionContent {
     position: relative;
     top: -0.3rem;
@@ -25,4 +24,11 @@ i {
     background-color: #f7f7f7;
     padding: 1rem;
     border-radius: 10px;
+    animation: slide-in 0.5s ease-in-out;
+}
+
+@keyframes slide-in {
+    from{
+        transform: translateY(-100%);
+    }
 }

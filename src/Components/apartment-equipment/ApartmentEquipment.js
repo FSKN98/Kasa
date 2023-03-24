@@ -8,7 +8,7 @@ export function ApartmentEquipment(props) {
     <div className="apartmentEquipment">
       <p className="equipmentHeader">
         <span>Équipements</span>
-        <i className="fas fa-chevron-down"></i>
+        <i className="fas fa-chevron-up"></i>
       </p>
       <div>
         {equipmentsApart.map((equipment) => (
