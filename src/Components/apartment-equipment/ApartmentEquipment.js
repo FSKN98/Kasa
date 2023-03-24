@@ -2,7 +2,7 @@ import React from "react";
 import "./ApartmentEquipment.css";
 
 export function ApartmentEquipment(props) {
-  const { EquipmentApart } = props;
+  const { equipmentsApart } = props;
 
   return (
     <div className="apartmentEquipment">
@@ -11,8 +11,9 @@ export function ApartmentEquipment(props) {
         <i className="fas fa-chevron-down"></i>
       </p>
       <div>
-        {" "}
-        <p className="equipmentContent">{EquipmentApart}</p>
+        {equipmentsApart.map((equipment) => (
+          <p key={equipment} className="equipmentContent">{equipment}</p>
+        ))}
       </div>
     </div>
   );

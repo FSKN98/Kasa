@@ -1,4 +1,6 @@
+
 .errorContainer{
+
     color:#FF6060;
     text-align: center;
 }
@@ -8,6 +10,7 @@
 margin-bottom: 0.5rem;}
 h2{
     font-size: 30px;
+  
 }
 .linkError{
     color: #FF6060;

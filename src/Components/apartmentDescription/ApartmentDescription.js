@@ -3,12 +3,12 @@ import "./ApartmentDescription.css";
 
 export function ApartmentDescription(props)
 {
-  const { descriptionApart } = props
+  const {title,descriptionApart } = props
   
   return (
     <div className="apartmentDescription">
       <p className="descriptionHeader">
-        <span>Description</span>
+        <span>{title}</span>
         <i className="fas fa-chevron-down"></i>
       </p>
       <p className="descriptionContent">

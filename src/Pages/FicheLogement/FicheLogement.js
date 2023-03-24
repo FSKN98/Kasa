@@ -17,10 +17,10 @@ export default function FicheLogement() {
   return (
     activeApart && <div className="apartmentPage">
       <ApartmentBanner imgSource={activeApart.cover} />
-      <ApartmentHeader />
+      <ApartmentHeader apartment={activeApart} />
       <div className="apartmentDescriptionArea">
-        <ApartmentDescription descriptionApart={activeApart.description} />
-        <ApartmentEquipment EquipmentApart={activeApart.equipments}/>
+        <ApartmentDescription title="Description" descriptionApart={activeApart.description} />
+        <ApartmentEquipment equipmentsApart={activeApart.equipments}/>
       </div>
     </div>
   );
