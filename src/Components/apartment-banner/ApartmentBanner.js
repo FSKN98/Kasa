@@ -4,25 +4,31 @@ import "./ApartmentBanner.css";
 export default function ApartmentBanner(props) {
   const pictures = props.pictures;
   const [currentPicture, setCurrentPicture] = useState(0);
-  const getClassName = (i) => {
-    if (i === currentPicture) return "show";
-    return "";
+
+  const moveToNext = () => {
+    setCurrentPicture(currentPicture + 1);
   };
-  const moveToNext = () =>
-  {
-    setCurrentPicture((currentPicture+1)%pictures.lenght)
-  }
+  const moveToBack = () => {
+    setCurrentPicture(currentPicture - 1);
+  };
   return (
-    <div>
-      <div className="apartmentImgContainer">
-        <button onClick={moveToNext}>ArrowLeft</button>
-          <button>ArrowRight</button>
+    <div className="apartmentImgContainer">
+      <div className="imgContainer">
         {pictures.map((pic, i) => (
-          <div key={i}  className="apartmentImg">
-            <img key={pic} src={pic} alt="" className={getClassName(i)}></img>
-          </div>
+          <img
+            key={pic}
+            src={pictures[currentPicture]}
+            alt=""
+            className="apartmentImg"
+          ></img>
         ))}
       </div>
+      <button className="btn buttonBack" onClick={moveToBack}>
+       <i className="fas fa-chevron-left"></i>
+      </button>
+      <button className="btn buttonNext" onClick={moveToNext}>
+       <i className="fas fa-chevron-right"></i>
+      </button>
     </div>
   );
 }

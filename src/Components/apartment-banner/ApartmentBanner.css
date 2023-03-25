@@ -1,19 +1,44 @@
 .apartmentImgContainer {
-    margin-bottom: 2rem;
-    position: relative;
-    height: 20rem;
-width: 100%;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.imgContainer {
+  position: relative;
+  height: 20rem;
+  width: 100%;
 }
 .apartmentImg {
-    position: absolute;
-    object-fit: cover;
-        width: 100%;
-        height: inherit;
-        border-radius: 25px;
-        margin-bottom: 30px;
-        opacity: 0;
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: inherit;
+  border-radius: 25px;
+  margin-bottom: 30px;
+  transition: opacity 0.5s ease-in-out;
 }
-.show{
-    opacity: 1;
+.show {
+  opacity: 1;
+}
+.btn {
+  font-size: 3rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
 
+  width: 5rem;
+  background-color: transparent;
+}
+.buttonBack {
+  left: 0;
+}
+.buttonNext {
+  right: 0;
+}
+@media screen and (max-width: 768px) {
+.btn{
+    font-size: 2rem;
+}
 }
