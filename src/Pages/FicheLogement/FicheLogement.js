@@ -16,7 +16,7 @@ export default function FicheLogement() {
   console.log(activeApart);
   return (
     activeApart && <div className="apartmentPage">
-      <ApartmentBanner imgSource={activeApart.cover} />
+      <ApartmentBanner pictures={activeApart.pictures} />
       <ApartmentHeader apartment={activeApart} />
       <div className="apartmentDescriptionArea">
         <ApartmentDescription title="Description" descriptionApart={activeApart.description} />
