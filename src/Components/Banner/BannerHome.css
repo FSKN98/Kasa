@@ -2,7 +2,6 @@
   padding: 0 100px 50px;
 }
 .banner {
-
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -14,6 +13,7 @@
   place-items: center;
   color: white;
   font-size: 50px;
+  filter: brightness(65%);
 }
 .titleBanner {
   display: none;

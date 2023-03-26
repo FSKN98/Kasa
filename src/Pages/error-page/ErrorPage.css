@@ -1,18 +1,38 @@
-
-.errorContainer{
-
-    color:#FF6060;
-    text-align: center;
+.errorPageContainer {
+  height: 80vh;
 }
-.numberError{
-    font-weight: bold;
-    font-size: 300px;
-margin-bottom: 0.5rem;}
-h2{
-    font-size: 30px;
-  
+.errorContainer {
+  color: #ff6060;
+  text-align: center;
 }
-.linkError{
-    color: #FF6060;
-
+.numberError {
+  font-weight: bold;
+  font-size: 300px;
+  margin-bottom: 0.5rem;
+}
+h2 {
+  font-size: 30px;
+}
+.linkErrorContain {
+  margin-top: 110px;
+}
+.linkError {
+  color: #ff6060;
+}
+.textError {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .errorPageContainer {
+    height: 70vh;
+  }
+  .errorContainer {
+    margin-top: 70px;
+  }
+  .textError {
+    display: block;
+  }
+  .numberError {
+    font-size: 180px;
+  }
 }
