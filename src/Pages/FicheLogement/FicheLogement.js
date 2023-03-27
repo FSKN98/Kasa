@@ -5,6 +5,7 @@ import ApartmentBanner from "../../Components/apartment-banner/ApartmentBanner";
 import { ApartmentEquipment } from "../../Components/apartment-equipment/ApartmentEquipment";
 import ApartmentHeader from "../../Components/apartment-header/ApartmentHeader";
 import { ApartmentDescription } from "../../Components/apartmentDescription/ApartmentDescription";
+import ErrorPage from "../error-page/ErrorPage";
 import "./FicheLogement.css";
 
 export default function FicheLogement() {
@@ -15,13 +16,13 @@ export default function FicheLogement() {
   }, []);
   console.log(activeApart);
   return (
-    activeApart && <div className="apartmentPage">
+    activeApart ? <div className="apartmentPage">
       <ApartmentBanner pictures={activeApart.pictures} />
       <ApartmentHeader apartment={activeApart} />
       <div className="apartmentDescriptionArea">
         <ApartmentDescription title="Description" descriptionApart={activeApart.description} />
         <ApartmentEquipment equipmentsApart={activeApart.equipments}/>
       </div>
-    </div>
+    </div>:<ErrorPage/>
   );
 }

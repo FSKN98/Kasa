@@ -1,28 +1,28 @@
-.aboutContainer{
-    padding: 0 100px 50px;
+.aboutContainer {
+  padding: 0 100px 50px;
 }
-.aboutContent{
-        padding-inline: 4.5rem;
+.aboutContent {
+  padding-inline: 4.5rem;
 }
 .bannerAbout {
-        background-repeat: no-repeat;
-            background-size: cover;
-    margin-bottom: 30px;
-    background-image: url("../../Images/Banner/banner-about.png");
-    min-height: 220px;
-    width: 100%;
-    border-radius: 2rem;
-    display: grid;
-    place-items: center;
-    color: white;
-    font-size: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 30px;
+  background-image: url("../../Images/Banner/banner-about.png");
+  min-height: 220px;
+  width: 100%;
+  border-radius: 2rem;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 50px;
+  filter: brightness(65%);
 }
 @media screen and (max-width: 768px) {
-    .aboutContainer {
-            padding: 0 20px;
-        }
-.aboutContent {
-        padding-inline: 0;
-    }
-  
+  .aboutContainer {
+    padding: 0 20px;
+  }
+  .aboutContent {
+    padding-inline: 0;
+  }
 }

@@ -3,13 +3,21 @@ import "./ApartmentBanner.css";
 
 export default function ApartmentBanner(props) {
   const pictures = props.pictures;
-  const [currentPicture, setCurrentPicture] = useState(0);
+  const [currentPicture, setCurrentPicture] = useState(0); //crochet parce qu'on peut changer la valeur
 
   const moveToNext = () => {
-    setCurrentPicture(currentPicture + 1);
+    if (currentPicture === pictures.length - 1) {
+      setCurrentPicture(0);
+    } else {
+      setCurrentPicture(currentPicture + 1);
+    }
   };
   const moveToBack = () => {
-    setCurrentPicture(currentPicture - 1);
+    if (currentPicture === 0) {
+      setCurrentPicture(pictures.length - 1);
+    } else {
+      setCurrentPicture(currentPicture - 1);
+    }
   };
   return (
     <div className="apartmentImgContainer">
@@ -20,14 +28,18 @@ export default function ApartmentBanner(props) {
             src={pictures[currentPicture]}
             alt=""
             className="apartmentImg"
-          ></img>
+          />
         ))}
+        <div className="numberSlide">
+          {currentPicture + 1}/{pictures.length}
+        </div>
       </div>
+
       <button className="btn buttonBack" onClick={moveToBack}>
-       <i className="fas fa-chevron-left"></i>
+        <i className="fas fa-chevron-left"></i>
       </button>
       <button className="btn buttonNext" onClick={moveToNext}>
-       <i className="fas fa-chevron-right"></i>
+        <i className="fas fa-chevron-right"></i>
       </button>
     </div>
   );

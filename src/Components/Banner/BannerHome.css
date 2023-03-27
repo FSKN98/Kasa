@@ -2,18 +2,24 @@
   padding: 0 100px 50px;
 }
 .banner {
+  overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
   background-image: url("../../Images/Banner/Banner.png");
-  min-height: 220px;
+  height: 220px;
   width: 100%;
   border-radius: 2rem;
-  display: grid;
-  place-items: center;
   color: white;
   font-size: 50px;
-  filter: brightness(65%);
+}
+.title {
+  background-color: rgba(0, 0, 0, 0.50);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 .titleBanner {
   display: none;
