@@ -6,7 +6,7 @@ const ListPage = () => {
   return (
     <div className="apartContainer">
       {data.map((logement) => (
-        <Link className="linkToApartement" to={`/fiche-logement/${logement.id}`}>
+        <Link key={logement.id} className="linkToApartement" to={`/fiche-logement/${logement.id}`}>
           <div className="apartContent" style={{backgroundImage: `url(${logement.pictures[0]})`}}>       
             <div className="subtitleContainer">{logement.title}</div>
           </div>

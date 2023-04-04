@@ -2,13 +2,12 @@
   background-color: #f7f7f7;
   margin: 0 100px 20px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   border-radius: 25px;
   padding: 40px;
 }
 .linkToApartement {
-  width: 32%;
+  width: 33%;
 text-decoration: none;
 }
 .apartContent {
