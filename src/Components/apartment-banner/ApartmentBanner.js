@@ -30,17 +30,22 @@ export default function ApartmentBanner(props) {
             className="apartmentImg"
           />
         ))}
-        <div className="numberSlide">
-          {currentPicture + 1}/{pictures.length}
-        </div>
+        {pictures.length > 1 && (
+          <div className="numberSlide">
+            {currentPicture + 1}/{pictures.length}
+          </div>
+        )}
       </div>
-
-      <button className="btn buttonBack" onClick={moveToBack}>
-        <i className="fas fa-chevron-left"></i>
-      </button>
-      <button className="btn buttonNext" onClick={moveToNext}>
-        <i className="fas fa-chevron-right"></i>
-      </button>
+      {pictures.length > 1 && (
+        <>
+          <button className="btn buttonBack" onClick={moveToBack}>
+            <i className="fas fa-chevron-left"></i>
+          </button>
+          <button className="btn buttonNext" onClick={moveToNext}>
+            <i className="fas fa-chevron-right"></i>
+          </button>
+        </>
+      )}
     </div>
   );
 }
