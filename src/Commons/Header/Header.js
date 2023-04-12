@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <header className="header">
       <div>
-        <img src={kasaLogo} className="logoKasa" />
+        <a href="/"><img src={kasaLogo} className="logoKasa" /></a>
       </div>
       <nav className="navbar">
         <Link to="/" className="accueil">
