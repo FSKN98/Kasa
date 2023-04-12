@@ -1,35 +1,45 @@
-.apartmentDescription{
-    margin-bottom: 30px;
-    width: 100%;
-    overflow: hidden;
-    color: #ff6060;
+.apartmentDescription {
+  margin-bottom: 30px;
+  width: 100%;
+  overflow: hidden;
+  color: #ff6060;
+  font-size: 18px;
 }
 .descriptionHeader {
-    font-size: 18px;
-    background-color: #ff6060;
-    color: white;
-    padding: 0.2em 1em;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  font-size: 18px;
+  background-color: #ff6060;
+  color: white;
+  padding: 0.2em 1em;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 i {
-    font-size: 2em;
-    cursor: pointer;
+  font-size: 2em;
+  cursor: pointer;
 }
 .descriptionContent {
-    position: relative;
-    top: -0.3rem;
-    z-index: -1;
-    background-color: #f7f7f7;
-    padding: 1rem;
-    border-radius: 10px;
-    animation: slide-in 0.5s ease-in-out;
+  position: relative;
+  top: -0.3rem;
+  z-index: -1;
+  background-color: #f7f7f7;
+  padding: 1rem;
+  border-radius: 10px;
+  animation: slide-in 0.5s ease-in-out;
 }
 
 @keyframes slide-in {
-    from{
-        transform: translateY(-100%);
-    }
+  from {
+    transform: translateY(-100%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .apartmentDescription {
+    font-size: 12px;
+  }
+  .descriptionHeader {
+    font-size: 13px;
+  }
 }

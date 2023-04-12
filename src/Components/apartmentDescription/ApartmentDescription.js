@@ -9,12 +9,17 @@ export function ApartmentDescription(props) {
   const showContent = () => {
     setIsContentVisible(!isContentVisible);
   };
-  
+
   return (
     <div className="apartmentDescription">
       <p className="descriptionHeader">
         <span>{title}</span>
-        <i className={isContentVisible ? "fas fa-chevron-down" : "fas fa-chevron-up"} onClick={showContent}></i>
+        <i
+          className={
+            isContentVisible ? "fas fa-chevron-down" : "fas fa-chevron-up"
+          }
+          onClick={showContent}
+        ></i>
       </p>
       {isContentVisible && (
         <p className="descriptionContent">{descriptionApart}</p>

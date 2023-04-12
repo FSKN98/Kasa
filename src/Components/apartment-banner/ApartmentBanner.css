@@ -32,22 +32,21 @@
   background-color: transparent;
 }
 .buttonBack {
-
   left: 0;
 }
 .buttonNext {
   right: 0;
 }
-.numberSlide{
+.numberSlide {
   position: absolute;
   width: 100%;
   text-align: center;
   bottom: 10px;
   color: white;
-  font-size:20px;
+  font-size: 20px;
 }
 @media screen and (max-width: 768px) {
-.btn{
-    font-size: 2rem;
-}
+  .btn {
+    font-size: 1rem;
+  }
 }

@@ -23,8 +23,8 @@ i {
   background-color: #f7f7f7;
   padding: 12px;
   border-radius: 10px;
-
   overflow: hidden;
+  font-size: 18px;
 }
 .equipmentContent {
   margin-top: 15px;
@@ -34,5 +34,13 @@ i {
 @keyframes slide-in {
   from {
     transform: translateY(-100%);
+  }
+}
+@media screen and (max-width: 768px) {
+  .equipmentHeader {
+    font-size: 13px;
+  }
+  .equipmentContainer {
+    font-size: 12px;
   }
 }

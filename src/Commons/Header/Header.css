@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 40px 100px 50px;
+  font-size: 24px;
 }
 .accueil {
   text-decoration: none;
@@ -28,6 +29,7 @@
   }
   .header {
     padding: 20px 20px 30px;
+      font-size: 12px;
   }
   .navbar {
     text-transform: uppercase;

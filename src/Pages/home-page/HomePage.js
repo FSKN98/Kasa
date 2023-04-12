@@ -1,5 +1,5 @@
 import React from 'react'
-import Banner from '../../Components/Banner/BannerHome'
+import Banner from '../../Components/banner/BannerHome'
 import ListPage from '../../Components/list/List'
 import "./HomePage.css"
 

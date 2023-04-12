@@ -3,36 +3,35 @@ h2,
 p {
   margin: 0;
 }
-h1{
+h1 {
   font-size: 36px;
   font-weight: 400;
 }
-h2{
-    font-size: 30px;
-      font-weight: 400;
+h2 {
+  font-size: 18px;
+  font-weight: 400;
 }
 .apartmentPage {
   padding: 0 100px;
   color: #ff6060;
 }
-.apartmentDescriptionArea{
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 50px;
+.apartmentDescriptionArea {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 50px;
 }
 @media screen and (max-width: 768px) {
   h1 {
-      font-size: 25px;
-    }
-    h2 {
-      font-size: 20px;
-
-    }
-    .apartmentPage {
-            padding: 0 20px;
-        }
-.apartmentDescriptionArea {
-       flex-direction: column;
-      align-items: center;
-    }
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+  .apartmentPage {
+    padding: 0 20px;
+  }
+  .apartmentDescriptionArea {
+    flex-direction: column;
+    align-items: center;
+  }
 }

@@ -1,16 +1,11 @@
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import React from "react";
-import FicheLogement from "../Pages/FicheLogement/FicheLogement";
+import FicheLogement from "../Pages/ficheLogement/FicheLogement";
 import HomePage from "../Pages/home-page/HomePage";
 import ErrorPage from "../Pages/error-page/ErrorPage";
-import Header from "../Commons/Header/Header";
-import Footer from "../Commons/Footer/Footer";
+import Header from "../Commons/header/Header";
+import Footer from "../Commons/footer/Footer";
 import About from "../Pages/about/About";
 
 export default function Navigation() {

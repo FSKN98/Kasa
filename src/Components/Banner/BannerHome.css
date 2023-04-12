@@ -19,12 +19,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 48px;
 
 }
 .titleBanner {
   display: none;
 }
 @media screen and (max-width: 768px) {
+  .banner {
+      height: 120px;
+    }
+  .title {
+
+      font-size: 24px;
+  
+    }
   .titleBanner {
     display: block;
   }

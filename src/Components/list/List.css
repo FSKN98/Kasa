@@ -36,11 +36,15 @@ text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
+  .apartContainer {
+      background-color:white;
+      padding: 0;
+    }
   .bannerContainer {
     padding: 0 20px 20px;
   }
   .apartContainer {
-    margin: 0 20px 20px 20px;
+    margin: 0;
     flex-direction: column;
   }
   .linkToApartement {
