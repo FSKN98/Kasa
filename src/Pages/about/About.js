@@ -1,5 +1,5 @@
 import React from "react";
-import { ApartmentDescription } from "../../Components/apartmentDescription/ApartmentDescription";
+import { ApartmentDescription } from "../../Components/apartment-description/ApartmentDescription";
 import "./About.css";
 
 export default function about() {

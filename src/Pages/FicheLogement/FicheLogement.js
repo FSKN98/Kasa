@@ -4,7 +4,7 @@ import { getApartmentById } from "../../Actions/actions";
 import ApartmentBanner from "../../Components/apartment-banner/ApartmentBanner";
 import { ApartmentEquipment } from "../../Components/apartment-equipment/ApartmentEquipment";
 import ApartmentHeader from "../../Components/apartment-header/ApartmentHeader";
-import { ApartmentDescription } from "../../Components/apartmentDescription/ApartmentDescription";
+import { ApartmentDescription } from "../../Components/apartment-description/ApartmentDescription";
 import ErrorPage from "../error-page/ErrorPage";
 import "./FicheLogement.css";
 
