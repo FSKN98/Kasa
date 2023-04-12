@@ -14,7 +14,6 @@ export default function FicheLogement() {
   useEffect(() => {
     getApartmentById(id, setActiveApart);
   }, []);
-  console.log(activeApart);
   return (
     activeApart ? <div className="apartmentPage">
       <ApartmentBanner pictures={activeApart.pictures} />
