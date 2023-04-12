@@ -1,4 +1,11 @@
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url("./FontFamilies/Montserrat/Montserrat-VariableFont_wght.ttf")
+      format("truetype");
+}
+
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif !important;
+  font-family: "Montserrat", sans-serif;
 }
